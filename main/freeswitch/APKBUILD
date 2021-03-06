@@ -68,6 +68,7 @@ subpackages="$pkgname-static $pkgname-dev $pkgname-flite $pkgname-timezones::noa
 	$pkgname-openrc $pkgname-dbg"
 
 source="https://files.freeswitch.org/freeswitch-releases/freeswitch-$pkgver.-release.tar.xz
+	exram-start-message.patch
 	0002-FS-verto-bswap_64.patch
 	configure-lua53.patch
 	include-lua53.patch
@@ -224,6 +225,7 @@ conf() {
 }
 
 sha512sums="6f85d33475217a93a7c1c5d676d63d1d4e4360db2a8c1cd3afeb4fa513df3b6c04095a12d69ed6fbb84b14177026840219f078c1145a877e804ee71eefe7da8c  freeswitch-1.10.5.-release.tar.xz
+f43b29f3c91f9d0d1675afd84ec806f7e558a1d0d879f5b2ab479b0b0bb7ed3356467d68a74a77ad83d3a7e8e0ea6426b8609c38d119dd4485a8898edfca1b14  exram-start-message.patch
 5f93150e1acd632df98bc3bed5613fb1e45180ae4096dcfee5c060da213c8355339260eaf5758cd77c785f6d84cf0661650a872ec574b586ab19803d4f6955f8  0002-FS-verto-bswap_64.patch
 222e3510790de29e29428c70325eb1d4e7852eb4315ee546f137293868bd71acf89e7c85c5ca9d0eb708090c9eef91878a8e12c1b9d5cc99a68fecbd42ad962f  configure-lua53.patch
 c1960f3c7acf729468b819f7f15d66a251c3967b2784bce18c7755b333156e687c55fdc1aceda588ceb1bf9638e2fd4a31a169b00b15c5040cf1001c3c73913b  include-lua53.patch
